@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>How I Review Code</title>
+<meta name="author" content="(Brad Ediger)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1>How I Review Code</h1>
+</section>
+
+<section>
+<section id="slide-sec-">
+<h2 id="org682686c">Caveats</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org930a399">Empathy</h2>
+<div class="outline-text-2" id="text-org930a399">
+</div>
+</section>
+<section id="slide-sec-">
+<h3 id="org0b18e90">It's easy to be critical. Make sure to be kind.</h3>
+<p class="fragment roll-in">
+There's good stuff to be seen everywhere.
+</p>
+<p class="fragment roll-in">
+Notice it in public!
+</p>
+</section>
+<section id="slide-sec-">
+<h3 id="org8ff55b7">Gaining Experience vs. Gaining Empathy</h3>
+
+</section>
+<section id="slide-sec-">
+<h3 id="org9c19ea9">We all have to work with each other</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org1df9d50">Stewardship</h2>
+<div class="outline-text-2" id="text-org1df9d50">
+</div>
+</section>
+<section id="slide-sec-">
+<h3 id="org1684f4f">We all have to work with each other</h3>
+<p class="fragment roll-in">
+&#x2026;on this code.
+</p>
+
+</section>
+<section id="slide-sec-">
+<h3 id="orgc329736">Cats</h3>
+<p class="fragment roll-in">
+= water + cat food
+</p>
+
+</section>
+<section id="slide-sec-">
+<h3 id="org0609479">Engine</h3>
+<p class="fragment roll-in">
+= code we have + changes we accept
+</p>
+<p class="fragment roll-in">
+Bit by bit, the code becomes what we make it.
+</p>
+<p class="fragment roll-in">
+What's the difference?
+</p>
+
+</section>
+<section id="slide-sec-">
+<h3 id="org19dfb88">PRs are ephemeral. Code is permanent.</h3>
+<p class="fragment roll-in">
+90% of your PRs will never be read again after merge
+</p>
+<p class="fragment roll-in">
+Communication in the PR is of limited value
+</p>
+<p class="fragment roll-in">
+Anything that truly matters should be litigated in code!
+</p>
+
+</section>
+<section id="slide-sec-">
+<h3 id="org53953aa">Code should carry its weight</h3>
+<p class="fragment roll-in">
+Complex implementations demand complex specs
+</p>
+<p class="fragment roll-in">
+Refactoring is free
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org94f4824">HOWTO: A Practical Guide</h2>
+<div class="outline-text-2" id="text-org94f4824">
+</div>
+</section>
+<section id="slide-sec-">
+<h3 id="org09aed72">Take your time</h3>
+<p class="fragment roll-in">
+Re-reading is not rework
+</p>
+<p class="fragment roll-in">
+Rewriting is not rework
+</p>
+<p class="fragment roll-in">
+Refactoring is not rework
+</p>
+<p class="fragment roll-in">
+Use the edit window!
+</p>
+
+</section>
+<section id="slide-sec-">
+<h3 id="orgcfab459">Know your customer</h3>
+<p class="fragment roll-in">
+What question is the author asking?
+</p>
+<p class="fragment roll-in">
+Check the labels (WIP / Do Not Merge)
+</p>
+<p class="fragment roll-in">
+The author is your friend.
+</p>
+
+</section>
+<section id="slide-sec-">
+<h3 id="org62062f4">Read adversarially</h3>
+<p class="fragment roll-in">
+What could go wrong?
+</p>
+<p class="fragment roll-in">
+Indulge your inner demons
+</p>
+<p class="fragment roll-in">
+The author is your <b>enemy</b>.
+</p>
+
+</section>
+<section id="slide-sec-">
+<h3 id="org2049303">Approval is endorsement!</h3>
+<p class="fragment roll-in">
+Don't approve until you're happy with the code
+</p>
+<p class="fragment roll-in">
+Ask the question until it's been answered
+</p>
+<p class="fragment roll-in">
+Defend your unpopular opinions!
+</p>
+
+</section>
+<section id="slide-sec-">
+<h3 id="orge5eb571">"Someone should do this"</h3>
+<p class="fragment roll-in">
+DO IT
+</p>
+
+</section>
+<section id="slide-sec-">
+<h3 id="org362d69b">Conclude with actionable advice</h3>
+<p class="fragment roll-in">
+Make it clear what matters to you.
+</p>
+<p class="fragment roll-in">
+"This looks great, just clean up XYZ and tag me back for a quick approval"
+</p>
+
+</section>
+<section id="slide-sec-">
+<h3 id="orgd5daaca">Improve the process</h3>
+<p class="fragment roll-in">
+How could this bug have been avoided?
+</p>
+<p class="fragment roll-in">
+What abstractions would have made this easier?
+</p>
+<p class="fragment roll-in">
+Is this something we'll be doing a lot?
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org4fa1cd9">Principles</h2>
+<p class="fragment roll-in">
+Hold code to very high standards
+</p>
+<p class="fragment roll-in">
+People are not their code
+</p>
+<p class="fragment roll-in">
+But people <span class="underline">like</span> their code
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="orgb9dc186">Questions?</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/lib/js/head.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
